@@ -5,9 +5,23 @@ import sys
 # except IndexError:
 #     print("Poucos argumentos")
 
+# if len(sys.argv) < 2:
+#     print("Poucos argumentos")
+# elif len(sys.argv) > 2:
+#     print("Muitos argumentos")
+# else:
+#     print("Hello, my name is", sys.argv[1])
+
+# if len(sys.argv) < 2:
+#     print("Poucos argumentos")
+# elif len(sys.argv) > 2:
+#     print("Muitos argumentos")
+
+# print("Hello, my name is", sys.argv[1])
+
+
 if len(sys.argv) < 2:
     print("Poucos argumentos")
-elif len(sys.argv) > 2:
-    print("Muitos argumentos")
-else:
+
+for arg in sys.argv:
     print("Hello, my name is", sys.argv[1])
